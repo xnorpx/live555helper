@@ -9,6 +9,12 @@
 
 #pragma once
 
+#include <stdint.h>
+#if defined(_MSC_VER)
+#include <BaseTsd.h>
+typedef SSIZE_T ssize_t;
+#endif
+
 #include "environment.h"
 #include "liveMedia.hh"
 
