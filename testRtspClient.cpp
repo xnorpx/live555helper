@@ -15,6 +15,10 @@
 #include "environment.h"
 #include "rtspconnectionclient.h"
 
+#ifdef _WIN32
+#include <getopt.h>
+#endif
+
 class MyCallback : public RTSPConnection::Callback
 {
 	private:

@@ -17,6 +17,10 @@
 #include "environment.h"
 #include "sdpclient.h"
 
+#ifdef _WIN32
+#include <getopt.h>
+#endif
+
 class MyCallback : public SDPClient::Callback
 {
 	private:
